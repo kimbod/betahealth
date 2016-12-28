@@ -1,3 +1,4 @@
+@import "../environment/settings/colours";
 @import "../environment/tools/mixins/conditionals";
 
 @mixin clearfix {
@@ -9,5 +10,27 @@
     clear: both;
     content: "";
     display: block;
+  }
+}
+
+@mixin reverse-polarity {
+  &:link {
+    color: $link-reverse-polarity;
+  }
+
+  &:visited {
+    color: $link-visited-reverse-polarity;
+  }
+
+  &:hover {
+    color: $link-hover-reverse-polarity;
+  }
+
+  &:active {
+    color: $link-active-reverse-polarity;
+  }
+
+  &:focus {
+    outline: 3px solid $focus-colour;
   }
 }
