@@ -1,7 +1,6 @@
-@import "../toolbox/mixins";
-@import "../toolbox/functions";
-@import "../environment/tools/mixins/typography";
+@import "../toolbox";
 @import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
 
 .article-pagination {
   @include clearfix;
