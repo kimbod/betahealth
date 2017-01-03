@@ -1,3 +1,6 @@
+@import "../environment/tools/mixins/typography";
+@import "../toolbox/mixins";
+
 // scss-lint:disable SelectorFormat NestingDepth
 
 $_border-colour: $grey-2;
@@ -30,7 +33,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 
     @if ($is-ie == false) or ($ie-version == 9) {
       .js-enabled & {
-        @extend %visuallyhidden;
+        @include visuallyhidden;
         height: $_element-size;
         left: 0;
         margin-right: 0;

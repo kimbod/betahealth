@@ -1,5 +1,9 @@
+@import "../toolbox/mixins";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .section-unit--divider {
-  @extend %measure;
+  @include reading-width;
   @include element-padding(bottom);
   position: relative;
 
